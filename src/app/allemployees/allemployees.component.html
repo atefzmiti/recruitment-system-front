@@ -1,0 +1,58 @@
+<mat-toolbar color="primary" class="mat-elevation-z6" >   <mat-icon> work history </mat-icon><span class="ms-1">  Scoring System
+</span>
+<div class="spacer"></div>
+<a mat-button onMouseOver="this.style.color='white'" onMouseOut="this.style.color='white'"  routerLink="/all">employees details</a>
+
+  <a mat-button onMouseOver="this.style.color='white'" onMouseOut="this.style.color='white'" routerLink="/rh/id">profile </a>
+
+  <button class="button" mat-raised-button color="accent" routerLink="/create" >Add new employee</button>
+  <button class="button" mat-raised-button color="accent" routerLink="/auth" (click)='onSignOut()'>Logout</button>
+
+</mat-toolbar>
+
+
+
+<br>
+<br><div class="container">
+  <h3 class="d-flex justify-content-center" >
+All Employees
+  </h3>
+</div>
+<br>
+
+<div class="panel panel-primary">
+  
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+         <th>username</th>
+         <th>address</th>
+         <th>startTime</th>
+         <th>endTime</th>
+         <th>days off</th>
+         <th>nb of absence</th>
+         <th>nb of delay</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let users of user">
+          <td>{{users.id}}</td>
+          <td>{{users.firstName}}</td>
+          <td>{{users.lastName}}</td>
+
+          <td>{{users.username}}</td>
+          <td>{{users.address}}</td>
+          <td>{{users.startTime | date :  "dd.MM.y"}}</td>
+          <td>{{users.endTime | date :  "dd.MM.y"}}</td>
+
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
