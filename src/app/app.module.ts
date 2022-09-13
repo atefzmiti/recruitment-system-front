@@ -23,7 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { ScoresComponent } from './scores/scores.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 import { RhprofileComponent } from './rhprofile/rhprofile.component';
-import { UserScoreComponent } from './user-score/user-score.component'
+import { UserScoreComponent } from './user-score/user-score.component';
+import { CreateRessourceComponent } from './create-ressource/create-ressource.component'
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { UserScoreComponent } from './user-score/user-score.component'
     UserinfoComponent,
     RhprofileComponent,
     UserScoreComponent,
+    CreateRessourceComponent,
   ],
   imports: [
     MatIconModule,

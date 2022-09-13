@@ -11,6 +11,7 @@ import { ScoresComponent } from './scores/scores.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 import { RhprofileComponent } from './rhprofile/rhprofile.component';
 import { UserScoreComponent } from './user-score/user-score.component';
+import { CreateRessourceComponent } from './create-ressource/create-ressource.component';
 
 const routes: Routes = [
   {path:'home',component:AccueilComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path:'user',component:UserinfoComponent},
 
   {path:'create', component:CreateUserComponent},
+  {path:'createe', component:CreateRessourceComponent},
   {path:'user',component:UserprofileComponent,
   children: [
     {

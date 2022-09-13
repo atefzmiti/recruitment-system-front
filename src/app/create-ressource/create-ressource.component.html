@@ -59,12 +59,12 @@
                           <div class="input-group-text"><i class="fa fa-id-badge"></i></div>
                         </div>
                     <input type="text" class="form-control" #roles="ngModel" 
-                    [(ngModel)]="user.experienceparmois" name="experienceparmois" placeholder="experience par mois" required />
+                    [(ngModel)]="user.disponibilite" name="disponibilite" placeholder="disponibilite" required />
                   </div>
                     <div *ngIf="!submitted && clicked">
                       <div *ngIf="nom.invalid ">
                           <div *ngIf="prenom.errors.required"><small><i class="fa fa-times"></i>
-                             experience</small></div>
+                            disponibilite</small></div>
                       </div>
                   </div>
                   </div> 

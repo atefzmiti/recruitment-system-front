@@ -1,4 +1,4 @@
-export class User {
+export class ressource{
     id: number;
     firstName : string;
     lastName : string;
@@ -6,6 +6,6 @@ export class User {
     password: string;
     roles: string;
     address:string;
-   experienceparmois:number;
+   disponibilite:string;
     
 }
